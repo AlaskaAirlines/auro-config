@@ -1,0 +1,11 @@
+{
+  "name": "@aurodesignsystem/auro-config",
+  "version": "1.0.0",
+  "description": "This package contains the shared configuration for the development tools used by Auro.",
+  "keywords": [],
+  "author": "AlaskaAirlines",
+  "license": "Apache-2.0",
+  "exports": {
+    "./biome": "./configs/biome.json"
+  }
+}
