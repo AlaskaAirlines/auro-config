@@ -10,7 +10,7 @@
   "exports": {
     "./biome": "./configs/biome.json"
   },
-  "files": ["configs"],
+  "files": ["configs", "CHANGELOG.md", "README.md", "LICENSE", "NOTICE"],
   "scripts": {
     "lint": "biome check --fix --no-errors-on-unmatched",
     "prepare": "husky",
