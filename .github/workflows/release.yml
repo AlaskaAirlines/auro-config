@@ -1,8 +1,8 @@
 name: Release
 
 # Controls when the action will run. 
-# - For PRs: runs tests on any PR to main, rc.**, or dev branches
-# - For pushes: runs tests and (if successful) the release job, but only on main and rc.** branches
+# - For PRs: runs tests on any PR to main, rc/**, or dev branches
+# - For pushes: runs tests and (if successful) the release job, but only on main and rc/** branches
 on:
   push:
     branches: [ main, rc/** ]
