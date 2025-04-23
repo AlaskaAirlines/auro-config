@@ -1,13 +1,13 @@
 name: Release
 
 # Controls when the action will run. 
-# - For PRs: runs tests on any PR to main, rc/**, or dev branches
-# - For pushes: runs tests and (if successful) the release job, but only on main and rc/** branches
+# - For PRs: runs tests on any PR to main, rc.**, or dev branches
+# - For pushes: runs tests and (if successful) the release job, but only on main and rc.** branches
 on:
   push:
-    branches: [ main, rc/** ]
+    branches: [ main, rc.** ]
   pull_request:
-    branches: [ main, rc/**, dev ]
+    branches: [ main, rc.**, dev ]
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:

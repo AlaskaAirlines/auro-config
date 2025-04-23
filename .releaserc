@@ -4,7 +4,7 @@
       "name": "main"
     },
     {
-      "name": "rc/**",
+      "name": "rc.**",
       "prerelease": "rc"
     }
   ],
@@ -30,11 +30,7 @@
     [
       "@semantic-release/git",
       {
-        "assets": [
-          "./package.json",
-          "./CHANGELOG.md",
-          "./readme.md"
-        ],
+        "assets": ["./package.json", "./CHANGELOG.md", "./readme.md"],
         "noVerify": true
       }
     ],
