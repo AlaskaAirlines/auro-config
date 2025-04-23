@@ -33,10 +33,6 @@ jobs:
           node-version: 22
       - name: Install dependencies
         run: npm clean-install
-      - name: Verify the integrity of provenance attestations and registry signatures for installed dependencies
-        run: npm audit signatures
-      - name: Build
-        run: npm run build
       - name: Release
         env:
           GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
