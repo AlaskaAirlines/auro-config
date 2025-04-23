@@ -12,12 +12,12 @@
   },
   "files": ["configs"],
   "scripts": {
-    "lint": "biome check --fix",
+    "lint": "biome check --fix --no-errors-on-unmatched",
     "prepare": "husky",
     "test": "echo \"No tests available\" && exit 0"
   },
   "lint-staged": {
-    "*": ["biome check --fix"]
+    "*": ["biome check --fix --no-errors-on-unmatched"]
   },
   "devDependencies": {
     "@biomejs/biome": "1.9.4",
