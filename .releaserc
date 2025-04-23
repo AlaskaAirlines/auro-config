@@ -5,7 +5,8 @@
     },
     {
       "name": "rc/*",
-      "prerelease": "rc-${name.replace(/^rc\\//g, '')}"
+      "prerelease": "rc-${name.replace(/^rc\\//g, '')}",
+      "channel": "rc"
     }
   ],
   "plugins": [
