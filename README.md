@@ -26,7 +26,7 @@ It is not recommended to modify or otherwise deviate from the configurations pro
 
 ### Biome
 
-1. Ensure sure you have the `@aurodesignsystems/auro-config package` installed in your project as a dev dependency.
+1. Ensure you have the `@aurodesignsystems/auro-config` package installed in your project as a dev dependency.
 2. Create a `biome.json` file in the root directory of your project with the following contents:
   ```json
   {
