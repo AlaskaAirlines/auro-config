@@ -5,7 +5,7 @@
     },
     {
       "name": "rc/*",
-      "prerelease": "${name.replace(/^rc\\//g, '')}"
+      "prerelease": "rc-${name.replace(/^rc\\//g, '')}"
     }
   ],
   "plugins": [
