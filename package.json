@@ -1,6 +1,6 @@
 {
   "name": "@aurodesignsystem/auro-config",
-  "version": "1.0.0-rc.1",
+  "version": "1.0.0",
   "description": "This package contains the shared configuration for the development tools used by Auro.",
   "keywords": ["alaska airlines", "auro", "design system", "configs"],
   "license": "Apache-2.0",
