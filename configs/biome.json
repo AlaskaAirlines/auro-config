@@ -38,7 +38,15 @@
   },
   "javascript": {
     "formatter": {
-      "quoteStyle": "double"
+      "quoteStyle": "double",
+      "indentStyle": "space",
+      "indentWidth": 2,
+      "bracketSpacing": true
+    }
+  },
+  "css": {
+    "formatter": {
+      "enabled": true
     }
   }
 }
