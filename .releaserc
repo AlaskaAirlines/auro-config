@@ -4,8 +4,8 @@
       "name": "main"
     },
     {
-      "name": "rc.**",
-      "prerelease": "rc"
+      "name": "rc/**",
+      "prerelease": true
     }
   ],
   "plugins": [
