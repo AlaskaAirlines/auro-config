@@ -11,13 +11,12 @@
       "node_modules",
       "dist",
       "coverage",
-      "*.log",
-      "*.lock",
       ".gitignore",
       ".husky",
       ".vscode",
       ".idea",
-      ".DS_Store"
+      ".DS_Store",
+      "package-lock.json"
     ]
   },
   "formatter": {
