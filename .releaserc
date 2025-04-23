@@ -4,8 +4,8 @@
       "name": "main"
     },
     {
-      "name": "rc/**",
-      "prerelease": true
+      "name": "rc/*",
+      "prerelease": "${name.replace(/^rc\\//g, '')}"
     }
   ],
   "plugins": [
