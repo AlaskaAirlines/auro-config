@@ -6,11 +6,11 @@ This package contains the shared configuration for the development tools used by
 
 - [Installation](#installation)
 - [Usage](#usage)
-- [Consuming Configurations](#consuming-configurations)
+- [Updating Configurations](#updating-configurations)
 
 ## Installation
 
-To install Auro CLI, clone the repository and install the dependencies:
+To install the Auro Config package in your project:
 
 ```bash
 npm install --save-dev @aurodesignsystem/auro-config
@@ -18,18 +18,32 @@ npm install --save-dev @aurodesignsystem/auro-config
 
 ## Usage
 
-Consume configurations provided to ensure your project aligns with the shared configurations provided by this package.
+Update your project's configuration files to extend the shared configurations provided by this package, ensuring alignment with Auro standards.
 
 It is not recommended to modify or otherwise deviate from the configurations provided in this package within individual repositories, components, or other projects that are expected to align with Auro.
 
-## Consuming Configurations
+## Updating Configurations
 
-### Biome
+### Biome + Stylelint
 
-1. Ensure you have the `@aurodesignsystems/auro-config` package installed in your project as a dev dependency.
-2. Create a `biome.json` file in the root directory of your project with the following contents:
-  ```json
-  {
-    "extends": ["@aurodesignsystem/auro-config/biome"]
-  }
-  ```
+1. Install or update the configuration package as a dev dependency:
+
+   ```bash
+   npm install --save-dev @aurodesignsystem/auro-config
+   ```
+
+2. Update your existing `biome.json` file to extend the shared configuration:
+
+   ```json
+   {
+     "extends": ["@aurodesignsystem/auro-config/biome"]
+   }
+   ```
+
+3. Update your existing `.stylelintrc` file to extend the shared configuration:
+
+   ```json
+   {
+     "extends": ["@aurodesignsystem/auro-config/stylelint"]
+   }
+   ```

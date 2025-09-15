@@ -8,7 +8,8 @@
     "access": "public"
   },
   "exports": {
-    "./biome": "./configs/biome.json"
+    "./biome": "./configs/biome.json",
+    "./stylelint": "./configs/stylelint.json"
   },
   "files": ["configs", "CHANGELOG.md", "README.md", "LICENSE", "NOTICE"],
   "scripts": {
