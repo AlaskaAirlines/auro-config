@@ -47,3 +47,11 @@ It is not recommended to modify or otherwise deviate from the configurations pro
      "extends": ["@aurodesignsystem/auro-config/stylelint"]
    }
    ```
+
+4. Update your existing `.releaserc` file to extend the shared configuration:
+
+   ```json
+   {
+     "extends": ["@aurodesignsystem/auro-config/releaserc"]
+   }
+   ```
