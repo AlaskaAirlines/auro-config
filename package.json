@@ -9,7 +9,8 @@
   },
   "exports": {
     "./biome": "./configs/biome.json",
-    "./stylelint": "./configs/stylelint.json"
+    "./stylelint": "./configs/stylelint.json",
+    "./releaserc": "./configs/releaserc.json"
   },
   "files": ["configs", "CHANGELOG.md", "README.md", "LICENSE", "NOTICE"],
   "scripts": {
