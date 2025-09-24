@@ -16,7 +16,7 @@
     "./biome": "./configs/biome.json",
     "./stylelint": "./configs/stylelint.json",
     "./releaserc": "./configs/releaserc.json",
-    "./commitlint": "./configs/commitlint.json",
+    "./commitlint": "./configs/commitlint.js",
     "./lintstaged": "./configs/lintstaged.json"
   },
   "files": [
