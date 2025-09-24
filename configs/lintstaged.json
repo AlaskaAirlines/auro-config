@@ -1,0 +1,4 @@
+{
+  "*": ["biome check --fix --no-errors-on-unmatched"],
+  "*.{scss,css}": ["stylelint --fix"]
+}

@@ -6,7 +6,7 @@ This package contains the shared configuration for the development tools used by
 
 - [Installation](#installation)
 - [Usage](#usage)
-- [Updating Configurations](#updating-configurations)
+- [Available configurations](#available-configurations)
 
 ## Installation
 
@@ -22,17 +22,9 @@ Update your project's configuration files to extend the shared configurations pr
 
 It is not recommended to modify or otherwise deviate from the configurations provided in this package within individual repositories, components, or other projects that are expected to align with Auro.
 
-## Updating Configurations
+## Available configurations
 
-### Biome + Stylelint
-
-1. Install or update the configuration package as a dev dependency:
-
-   ```bash
-   npm install --save-dev @aurodesignsystem/auro-config
-   ```
-
-2. Update your existing `biome.json` file to extend the shared configuration:
+- `biome.json`
 
    ```json
    {
@@ -40,7 +32,7 @@ It is not recommended to modify or otherwise deviate from the configurations pro
    }
    ```
 
-3. Update your existing `.stylelintrc` file to extend the shared configuration:
+- `.stylelintrc`
 
    ```json
    {
@@ -48,10 +40,26 @@ It is not recommended to modify or otherwise deviate from the configurations pro
    }
    ```
 
-4. Update your existing `.releaserc` file to extend the shared configuration:
+- `.releaserc`
 
    ```json
    {
      "extends": ["@aurodesignsystem/auro-config/releaserc"]
+   }
+   ```
+
+- `.commitlintrc`
+
+   ```json
+   {
+     "extends": ["@aurodesignsystem/auro-config/commitlint"]
+   }
+   ```
+
+- `.lintstagedrc`
+
+   ```json
+   {
+     "extends": ["@aurodesignsystem/auro-config/lintstaged"]
    }
    ```
