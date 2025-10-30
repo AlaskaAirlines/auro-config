@@ -10,7 +10,8 @@
   ],
   "license": "Apache-2.0",
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "provenance": true
   },
   "exports": {
     "./biome": "./configs/biome.json",
