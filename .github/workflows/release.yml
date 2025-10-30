@@ -8,6 +8,6 @@ on:
 
 jobs:
   action:
-    uses: AlaskaAirlines/auro-actions/.github/workflows/no-build_release.yml@dev
+    uses: AlaskaAirlines/auro-actions/.github/workflows/no-build_release.yml@main
     secrets:
       NPM_TOKEN: ${{ secrets.NPM_TOKEN }}

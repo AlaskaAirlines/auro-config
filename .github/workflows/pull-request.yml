@@ -9,6 +9,6 @@ on:
 
 jobs:
   action:
-    uses: AlaskaAirlines/auro-actions/.github/workflows/no-build_pull-request.yml@dev
+    uses: AlaskaAirlines/auro-actions/.github/workflows/no-build_pull-request.yml@main
     secrets:
       NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
