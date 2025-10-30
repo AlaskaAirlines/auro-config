@@ -2,6 +2,10 @@
   "name": "@aurodesignsystem/auro-config",
   "version": "0.0.0",
   "description": "This package contains the shared configuration for the development tools used by Auro.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlaskaAirlines/auro-config"
+  },
   "keywords": [
     "alaska airlines",
     "auro",
