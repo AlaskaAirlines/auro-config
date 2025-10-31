@@ -1,40 +1,13 @@
-name: Release
+name: Release Workflow
 
-# Controls when the action will run. 
-# - For PRs: runs tests on any PR to main, rc/**, or dev branches
-# - For pushes: runs tests and (if successful) the release job, but only on main and rc/** branches
 on:
   push:
-    branches: [ main, rc/** ]
-  pull_request:
-    branches: [ main, rc/**, dev ]
+    branches:
+      - 'rc/**'
+      - 'main'
 
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-
-  release:
-    # only release to main or rc branches
-    if: github.event_name == 'push' && (github.ref == 'refs/heads/main' || startsWith(github.ref, 'refs/heads/rc/'))
-    name: Release
-    runs-on: ubuntu-latest
-    permissions:
-      contents: write # to be able to publish a GitHub release
-      issues: write # to be able to comment on released issues
-      pull-requests: write # to be able to comment on released pull requests
-      id-token: write # to enable use of OIDC for npm provenance
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: 22
-      - name: Install dependencies
-        run: npm clean-install
-      - name: Release
-        env:
-          GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-        run: npx semantic-release
+  action:
+    uses: AlaskaAirlines/auro-actions/.github/workflows/no-build_release.yml@main
+    secrets:
+      NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
